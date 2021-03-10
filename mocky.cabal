@@ -1,0 +1,79 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.2.
+--
+-- see: https://github.com/sol/hpack
+
+name:           mocky
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/githubuser/mocky#readme>
+homepage:       https://github.com/githubuser/mocky#readme
+bug-reports:    https://github.com/githubuser/mocky/issues
+author:         Author name here
+maintainer:     example@example.com
+copyright:      2020 Author name here
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+    ChangeLog.md
+
+source-repository head
+  type: git
+  location: https://github.com/githubuser/mocky
+
+executable mocky
+  main-is:      Main.hs
+  build-depends:
+    base >=4.13 && <5
+    , aeson
+    , bsb-http-chunked
+    , containers
+    , generic-lens
+    , http-types
+    , bytestring
+    , case-insensitive
+    , wai
+    , wai-extra
+    , warp
+    , text
+  hs-source-dirs: app
+  default-extensions:
+    NoImplicitPrelude
+    NoMonomorphismRestriction
+    AllowAmbiguousTypes
+    BlockArguments
+    ConstraintKinds
+    DataKinds
+    DefaultSignatures
+    DeriveAnyClass
+    DeriveFunctor
+    DeriveGeneric
+    DerivingStrategies
+    DoAndIfThenElse
+    DuplicateRecordFields
+    ExplicitNamespaces
+    FlexibleContexts
+    FlexibleInstances
+    FunctionalDependencies
+    GADTs
+    LambdaCase
+    MultiParamTypeClasses
+    MultiWayIf
+    NamedFieldPuns
+    OverloadedLabels
+    OverloadedStrings
+    PartialTypeSignatures
+    PatternSynonyms
+    PolyKinds
+    RankNTypes
+    RecordWildCards
+    ScopedTypeVariables
+    StandaloneDeriving
+    TupleSections
+    TypeApplications
+    TypeFamilies
+    TypeOperators
+    ViewPatterns
+  ghc-options:    -threaded -rtsopts -with-rtsopts=-N -j
