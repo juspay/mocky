@@ -1,6 +1,6 @@
-{ mkDerivation, aeson, base, bsb-http-chunked, bytestring
-, case-insensitive, containers, generic-lens, http-types, lib, text
-, wai, wai-extra, warp
+{ mkDerivation, aeson, base, base64, bsb-http-chunked, bytestring
+, case-insensitive, containers, either, generic-lens, http-types
+, lib, text, wai, wai-extra, warp, warp-tls
 }:
 mkDerivation {
   pname = "mocky";
@@ -9,8 +9,9 @@ mkDerivation {
   isLibrary = false;
   isExecutable = true;
   executableHaskellDepends = [
-    aeson base bsb-http-chunked bytestring case-insensitive containers
-    generic-lens http-types text wai wai-extra warp
+    aeson base base64 bsb-http-chunked bytestring case-insensitive
+    containers either generic-lens http-types text wai wai-extra warp
+    warp-tls
   ];
   homepage = "https://github.com/githubuser/mocky#readme";
   license = lib.licenses.bsd3;

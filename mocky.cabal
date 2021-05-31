@@ -37,7 +37,10 @@ executable mocky
     , wai
     , wai-extra
     , warp
+    , warp-tls
     , text
+    , base64
+    , either
   hs-source-dirs: app
   default-extensions:
     NoImplicitPrelude
